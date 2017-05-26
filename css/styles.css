@@ -1,4 +1,54 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
 h1::before {
   content: "welcome to";
   background-color: yellow;
+}
+
+.main {
+  position: relative;
+}
+#main-orb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#big-sphere::after {
+  content: "kwejf";
+  font-weight: bold;
+  /*position: absolute;*/
+  bottom: 300px;
+
+}
+.history {
+  width: 500px;
+  height: 100%;
+  float: right;
+  background: yellow;
+
+
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 500px;
+}
+table, td, th {
+  border-bottom: 1px solid black;
+}
+td:first-child {
+  font-weight: bold;
+}
+.orb-types img {
+  height: 150px;
+  width: 150px;
+  float: left;
+  padding-top: 30px;
 }
