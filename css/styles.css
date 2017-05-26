@@ -1,0 +1,4 @@
+h1::before {
+  content: "welcome to";
+  background-color: yellow;
+}
