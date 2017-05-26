@@ -17,7 +17,8 @@ h1 {
   font-family: 'Racing Sans One', cursive;
   font-size: 100px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
+  padding-top: 80px;
 }
 h1::before {
   content: "welcome to . . .";
@@ -33,6 +34,7 @@ h1::before {
   height: auto;
   min-height: 2100px;
   border-radius: 30px;
+
 }
 #main-orb {
   display: block;
@@ -47,7 +49,7 @@ h1::before {
   font-weight: bold;
   position: absolute;
   width: 100%;
-  top: 900px;
+  top: 990px;
   left: 50%;
   color: black;
   font-size: 50px;
@@ -106,7 +108,31 @@ h3 {
   font-weight: bold;
   text-decoration: underline;
 }
-.bold {
-  font-family: 'Gudea', sans-serif;
-
+#wisdom:hover {
+  transform: scale(2);
+  animation: roll 3s infinite;
+  transform: rotate(90deg);
+}
+#health:hover {
+  transform: scale(2);
+  animation: roll 3s infinite;
+  transform: rotate(90deg);
+}
+#skill:hover {
+  transform: scale(2);
+  animation: roll 3s infinite;
+  transform: rotate(90deg);
+}
+#strength:hover {
+  transform: scale(2);
+  animation: roll 3s infinite;
+  transform: rotate(90deg);
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
